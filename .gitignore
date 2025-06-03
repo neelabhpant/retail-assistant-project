@@ -1,0 +1,15 @@
+# Environment variables
+.env
+*.env.*
+
+# Python cache
+__pycache__/
+*.pyc
+.venv/
+
+# IDE settings
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
