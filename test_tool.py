@@ -2,9 +2,10 @@
 from tools.order_history_tool import OrderHistoryTool
 from tools.return_item_tool import ReturnItemTool
 from tools.faq_tool import FAQTool
+from tools.product_search_tool import ProductSearchTool
 
 def run_tests():
-    print("--- Running Tool Tests ---")
+    print("--- Running All Tool Tests ---")
     
     # === Test OrderHistoryTool ===
     print("\n--- Testing OrderHistoryTool ---")
@@ -25,12 +26,21 @@ def run_tests():
     try:
         faq_tool = FAQTool()
         print("\n[Test Case 3.1: Query about returns]")
-        # Test with a query that should match one of our embedded FAQs
         result = faq_tool.run(query="how do I return something?")
         print("Result:\n" + result)
     except Exception as e:
         print(f"Could not run FAQTool test: {e}")
 
+    # === Test ProductSearchTool ===
+    print("\n--- Testing ProductSearchTool ---")
+    try:
+        product_search_tool = ProductSearchTool()
+        print("\n[Test Case 4.1: Query for a computer]")
+        # Test with a semantic query
+        result = product_search_tool.run(query="a computer for work")
+        print("Result:\n" + result)
+    except Exception as e:
+        print(f"Could not run ProductSearchTool test: {e}")
 
     print("\n--- All Tests Complete ---")
 
