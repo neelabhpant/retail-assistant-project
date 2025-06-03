@@ -1,4 +1,14 @@
+# requirements.txt
 streamlit
 python-dotenv
+pydantic
 pydantic-settings
 langchain-openai
+
+# CrewAI specific packages
+crewai==0.114.0
+crewai-tools
+
+# RAG and Vector DB packages
+chromadb-client
+sentence-transformers
