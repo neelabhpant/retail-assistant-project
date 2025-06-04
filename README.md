@@ -90,39 +90,6 @@ Once the setup is complete, you can run the Streamlit web application:
     streamlit run streamlit_app.py
     ```
 
-## Project Structure
-
-
-retail-assistant-project/
-├── .git/
-├── .gitignore
-├── README.md
-├── config/
-│   └── config.py           # Pydantic settings loader
-├── crew/
-│   ├── agents.py           # Agent definitions
-│   ├── crew_setup.py       # Crew assembly and kickoff logic
-│   └── tasks.py            # Task definitions
-├── data/
-│   ├── faqs.txt            # Raw FAQ data
-│   ├── orders.json         # Sample customer order data
-│   └── products.csv        # Sample product catalog
-├── rag/
-│   ├── embed_faqs.py       # Script to embed FAQs into ChromaDB
-│   └── embed_products.py   # Script to embed products into ChromaDB
-├── tools/
-│   ├── faq_tool.py
-│   ├── order_history_tool.py
-│   ├── product_search_tool.py
-│   └── return_item_tool.py
-├── utils/
-│   └── llm_loader.py       # Utility to load the LLM
-├── .env                    # For API keys (gitignored)
-├── main.py                 # CLI entry point for testing the crew
-├── requirements.txt        # Python dependencies
-└── streamlit_app.py        # Main Streamlit application file
-
-
 ## Future Enhancements (Potential)
 
 * **Streaming Responses:** Stream agent responses token-by-token in the UI.
