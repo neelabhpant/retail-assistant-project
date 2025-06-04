@@ -34,7 +34,6 @@ class ProductSearchTool(BaseTool):
         query_embedding = self._embedding_model.encode(query).tolist()
 
         try:
-            # Query for the top 3 most relevant products
             results = self._collection.query(
                 query_embeddings=[query_embedding],
                 n_results=3
@@ -43,7 +42,6 @@ class ProductSearchTool(BaseTool):
             return f"Error querying product database: {e}"
 
         if results and results['metadatas'] and results['metadatas'][0]:
-            # Format the results into a readable string
             response_str = "Found relevant products:\n"
             for metadata in results['metadatas'][0]:
                 response_str += (

@@ -27,7 +27,6 @@ class FAQTool(BaseTool):
             self._embedding_model = SentenceTransformer(settings.embedding_model_name)
             self._collection = self._chroma_client.get_collection(name="faqs")
         except Exception as e:
-            # Handle cases where ChromaDB might not be running during initialization
             print(f"Error initializing FAQTool: {e}")
             print("Please ensure ChromaDB is running and the 'faqs' collection has been embedded.")
             raise

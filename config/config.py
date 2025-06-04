@@ -28,11 +28,8 @@ class Settings(BaseSettings):
     chroma_port: int = 8000
 
     class Config:
-        # This allows pydantic to load variables from a .env file if needed,
-        # though we are doing it explicitly with load_dotenv()
         env_file = ".env"
         env_file_encoding = "utf-8"
         extra = "ignore"
 
-# Create a single, reusable instance of the settings
 settings = Settings()

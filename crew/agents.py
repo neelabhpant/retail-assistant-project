@@ -18,11 +18,10 @@ class RetailAgents:
                       "and most accurate response.",
             llm=llm,
             verbose=True,
-            allow_delegation=True # Allows this agent to delegate to the Retail Assistant
+            allow_delegation=True
         )
 
     def retail_assistant_agent(self) -> Agent:
-        # Instantiate tools inside the method for robustness
         return Agent(
             role="Retail Assistant Agent",
             goal="Handle specific customer inquiries related to order history, returns, product searches, and FAQs "

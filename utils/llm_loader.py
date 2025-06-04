@@ -9,8 +9,7 @@ def load_llm():
     return ChatOpenAI(
         api_key=settings.openai_api_key,
         model=settings.openai_model_name,
-        temperature=0.5
+        temperature=0.3
     )
 
-# You can create a single instance to be imported elsewhere
 llm = load_llm()
