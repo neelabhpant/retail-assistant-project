@@ -1,8 +1,5 @@
-# 🛍️ AI Retail Assistant Project
-
-## Objective
-
 This project is an AI-powered retail assistant designed to intelligently respond to customer queries in natural language. It leverages a multi-agent system built with CrewAI, Retrieval-Augmented Generation (RAG) for accessing knowledge bases, and specialized tools for performing specific retail-related tasks. The primary goal is to provide a seamless and efficient customer experience by understanding complex queries and providing comprehensive answers.
+# 🛍️ AI Retail Assistant Project
 
 ## Features
 
