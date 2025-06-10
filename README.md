@@ -27,6 +27,9 @@ This project is an AI-powered retail assistant designed to intelligently respond
 3.  **Tools & Data Layer:**
     * Tools interact with structured data (JSON for orders, CSV for products) and unstructured data (text files for FAQs).
     * RAG tools query ChromaDB, which stores embeddings of FAQs and product information.
+  
+![Screenshot 2025-06-10 at 12 13 25 PM](https://github.com/user-attachments/assets/93b54b48-4b3c-4066-b435-645626ff4a14)
+
 
 ## Setup and Installation
 
